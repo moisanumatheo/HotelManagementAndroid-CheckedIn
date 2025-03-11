@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:background="@drawable/lr270ffffffffff4e328b">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo_main"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Text below the image -->
+    <TextView
+        android:id="@+id/textBelowImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, tourist!"
+        android:textStyle="bold"
+        android:textColor="#232199"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_below="@id/imageViewTop"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Logout button -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp" />
+
+    <!-- Send Request button -->
+    <Button
+        android:id="@+id/buttonSendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        android:layout_above="@id/buttonLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

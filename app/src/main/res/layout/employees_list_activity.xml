@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lr270ffffffffff4e328b">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employees List"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#232199"
+        android:padding="16dp"
+        android:gravity="center" />
+
+    <!-- List of Employees -->
+
+    <!-- Home button -->
+    <ListView
+        android:id="@+id/listViewEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="100dp"
+        android:padding="16dp" />
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/casuta"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

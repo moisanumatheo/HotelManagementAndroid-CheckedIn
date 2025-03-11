@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/iconita"
+        android:label="CheckedIn"
+        android:roundIcon="@mipmap/iconitarotunda"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tentativa2"
+        tools:targetApi="31">
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomeActivity" />
+
+        <activity android:name=".SendRequestActivity" />
+
+        <activity android:name=".MinibarRequestActivity"/>
+
+        <activity android:name=".ReportIssueActivity"/>
+
+        <activity android:name=".ManagerActivity"/>
+
+        <activity android:name=".EmployeeActivity"/>
+
+        <activity android:name=".ReceivedRequestsActivity"/>
+
+        <activity android:name=".RoomOccupancyActivity"/>
+
+        <activity android:name=".EmployeesListActivity"/>
+
+        <activity android:name=".ReceivedRequestsActivity2"/>
+
+        <activity android:name=".RoomOccupancyActivity2"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_marginTop="70dp"
+    android:background="@drawable/lr270ffffffffff4e328b">
+
+    <!-- Image for refill snacks -->
+    <ImageView
+        android:id="@+id/imageRefillSnacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/refill_snacks"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Refill Snacks button -->
+    <Button
+        android:id="@+id/buttonRefillSnacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refill Snacks"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageRefillSnacks"
+        android:onClick="onRefillSnacksClicked" />
+
+    <!-- Image for refill drinks -->
+    <ImageView
+        android:id="@+id/imageRefillDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/refill_drinks"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRefillSnacks"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Refill Drinks button -->
+    <Button
+        android:id="@+id/buttonRefillDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refill Drinks"
+        android:layout_below="@id/imageRefillDrinks"
+        android:layout_centerHorizontal="true"
+        android:onClick="onRefillDrinksClicked" />
+
+    <!-- Home button -->
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/casuta"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

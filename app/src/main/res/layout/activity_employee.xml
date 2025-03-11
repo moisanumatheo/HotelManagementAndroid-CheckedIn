@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:background="@drawable/lr270ffffffffff4e328b">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/employee_picture"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Text below the image -->
+    <TextView
+        android:id="@+id/textBelowImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, employee!"
+        android:textStyle="bold"
+        android:textColor="#232199"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:layout_below="@id/imageViewTop"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Received Requests button -->
+    <Button
+        android:id="@+id/buttonReceivedRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received Requests"
+        android:layout_above="@id/buttonRoomOccupancy"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp" />
+
+    <!-- Room Occupancy button -->
+    <Button
+        android:id="@+id/buttonRoomOccupancy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room Occupancy"
+        android:layout_above="@id/buttonLogout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp" />
+
+    <!-- Logout button -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
